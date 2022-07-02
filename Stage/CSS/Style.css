@@ -1,0 +1,267 @@
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+    background-color: rgb(224, 224, 224);
+}
+
+header #logo{
+    margin-left: 50px;
+}
+
+
+#menu_top_lien nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#menu_top_lien nav li{
+    margin-right: 20px;
+}
+
+#menu_top_lien nav a{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+}
+
+#menu_top_lien nav a:hover{
+    text-decoration: underline;
+}
+
+/* Banniere */
+#banniere img{
+    width: 1400px;
+    height: 300px;
+}
+
+.slider{
+    width: 1400px;
+    overflow: hidden;
+    padding-top: 20px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.slides{
+	width: calc(1400px * 3); /*taille de chaque image*/
+    animation: glisse 15s infinite;
+}
+.slide{
+	float: left;
+}
+
+@keyframes glisse{
+    0% 
+    {
+        transform: translateX(0);
+    }
+    10% 
+    {
+        transform: translateX(0);
+    }
+    33% 
+    {
+        transform: translateX(-1400px); /*px a parcourir pour la prochaine image*/
+    }
+    43% 
+    {
+        transform: translateX(-1400px); /* duree que reste l'image */
+    }
+    66% 
+    {
+        transform: translateX(calc(-1400px * 2)); /*px a parcourir pour la prochaine image*/
+    }
+    76% 
+    {
+        transform: translateX(calc(-1400px * 2)); /* duree que reste l'image */
+    }
+    100% 
+    {
+        transform: translateX(0);
+    }
+}
+
+/*Section - Bouton remonter*/
+.bouton_up{
+    height: 70px;
+    width: 70px;
+    background: #28A251;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 80%;
+}
+.icone {
+    width: 35px;
+}
+
+/*Section - catalogue*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.catalogue {
+    max-width: 1200px;
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+.produits{
+    width: 300px;
+    height: 200px;
+}
+.produits img{
+    width: 300px;
+}
+.produits h2{
+    font-size: 20px;
+    padding: 0;
+}
+
+/*Section - Menu cote*/
+
+.global_container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+/*nav*/
+.side_nav{
+    position: sticky;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    border-right: 2px solid #e3e8f0;
+    background-color: #fdfdff;
+}
+
+.side_nav,h2 {
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav_link{
+    display: flex;
+    font-weight: 300;
+    color: #838f9f;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.nav_link:hover{
+    background: #f8f8f8;
+}
+
+.nav_link.active{
+    background: #e9e9e9;
+}
+
+.nav_link.active .nav_links{
+    color: #35B670;
+    font-weight: 500;
+}
+
+/*Main*/
+.main_content{
+    grid-column: 2;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.input_control{
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    background-color: #F4F4F4;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.input_control img{
+    width: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.input_control input{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: 0;
+    border: 0;
+    color: #000;
+    background-color: #F4F4F4;
+}
+
+.input_control input::placeholder{
+    color: #838f9f;
+    font-size: 16px;
+}
+
+/*footer*/
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background: rgb(251, 251, 251);
+    color: #333;
+}
+.content_footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 25px 0 50px;
+}
+
+.bloc {
+    flex-basis: 20%;
+    margin: 0 60px;
+}
+
+/* contact */
+.footer_contact h3,
+.footer_schedule h3{
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.footer_contact p {
+    padding: 5px 0;
+}
+.footer_contact img{
+    width: 15px;
+}
+
+
+
+
+
+
+/*Lien*/
+a
+{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+a:hover
+{
+    text-decoration: none;
+    color: rgb(142, 181, 142);
+}

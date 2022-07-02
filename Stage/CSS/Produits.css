@@ -1,0 +1,44 @@
+.produits_panier{
+    display: flex;
+    padding: 100px;
+    padding-bottom: 30px;
+}   
+.produits_panier img{
+    width: 500px;
+}
+
+.produits_achat{
+    width: 500px;
+    padding: 10px;
+}
+.produits_achat h1{
+    font-size: 60px;
+}
+
+input{
+    background-color: lightgreen;
+    border: none;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: greenyellow;
+}
+
+/*-- description --*/
+.description{
+   padding: 30px;
+}
+.description h1{
+    font-size: 30px;
+}
+.description p{
+    padding-left: 30px;
+}

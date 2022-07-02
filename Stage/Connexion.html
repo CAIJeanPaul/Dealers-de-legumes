@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="CSS/Connexion.css">
+
+    <!-- ==== Java ==== -->
+    <script src="JS/Connexion.js" defer></script>    
+    <!--<title>Login & Registration Form</title>-->
+</head>
+<body>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Connexion</span>
+
+                <form action="Test/Connexion.php" method="get">
+                    <div class="input-field">
+                        <input type="text" placeholder="Votre email" required >
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Mots de passe" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Se souvenire de moi</label>
+                        </div>
+                        
+                        <a href="#" class="text">Mots de passe oublier?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Se connecter">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Pas de compte?
+                        <a href="#" class="text signup-link">S'inscrire</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Inscription</span>
+
+                <form action="Php/Connexion.php" method="get">
+                    <div class="input-field">
+                        <input type="text" name="Nom" placeholder="Votre Nom" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="Email" placeholder="Votre email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" name="Mots_de_passe" placeholder="Mots de passe" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" name="Mots_de_passe_comfirmation" placeholder="Confirmer votre mots de passse" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">Se souvenire de moi</label>
+                        </div>
+                        
+                        <a href="#" class="text">Mots de passe oublier?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Connexion">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Inscrit?
+                        <a href="#" class="text login-link">Connecter vous</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
